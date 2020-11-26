@@ -95,13 +95,23 @@
                 border-radius: 29px;
                 font-weight: bold;
             }
+
+            .table_border {
+                border: 1px solid #080101;
+                text-align: left;
+                padding: 8px;
+            }
+
+            tr {
+                height:35px;
+            }
         </style>
     </head>
     <body style="height: 100vh">
         <br><br>
         <div class="order-container">
-        <h1><p class="vou-header">Your Order</p></h1><br><br><br>
-            <div class="float-left ship_tbl">
+            <h1><p class="vou-header">Your Order</p></h1><br><br><br>
+            <!-- <div class="float-left ship_tbl">
                 <table class="center">
                     <tr class="item_tr">
                         <td class="ship_td bold">Items:</td>
@@ -120,10 +130,67 @@
                         <td class="ship_td"></td>
                     </tr>
                 </table>
-            </div>
+            </div> -->
+            <table class="center" width="100%">
+                <tr style="background-color:black; color:white;">
+                    <th class="table_border bold">Item</th>
+                    <th class="table_border bold">Item Code</th>
+                    <th class="table_border bold">Quantity</th>
+                    <th class="table_border bold">Price</th>
+                    <th class="table_border bold">Subtotal</th>
+                </tr>
+                <tr>
+                    <td class="table_border"></td>
+                    <td class="table_border"></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                </tr>
+                <tr>
+                    <td class="table_border "></td>
+                    <td class="table_border "></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                </tr>
+                <tr>
+                    <td class="table_border "></td>
+                    <td class="table_border "></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                </tr>
+                <tr>
+                    <td class="table_border "></td>
+                    <td class="table_border "></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                </tr>
+                <tr>
+                    <td class="table_border "></td>
+                    <td class="table_border "></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                </tr>
+                <tr>
+                    <td class="table_border "></td>
+                    <td class="table_border "></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                    <td class="table_border vch_price_td"></td>
+                </tr>
+                <tr>
+                    <td class="table_border border-unset" colspan="4" style="text-align: center;">Total</td>
+                    <td class="table_border" ></td>
+                </tr>
+            </table>
         </div>
         <br><br><br><br>
-        <div class="order-container ">
+        <br><br><br><br>
+        <div class="txt_cen" style="margin-top: 100px;"><button class="confirm_btn"><a href="/E_SHOP/App/voucher.php">Make Payment</a></button></div>
+       <!--  <div class="order-container ">
             <label for="payment" class="label_margin">Select Payment  </label>
             <select class="pay_select" name="payment" id="payment">
                 <option value="volvo">KBZ Card</option>
@@ -137,10 +204,9 @@
             <label for="payment" class="label_margin">Select Delivery &nbsp;</label>
             <select class="pay_select" name="payment" id="payment">
                 <option value="volvo">Post</option>
-            </select>
-            <br><br><br><br>
-            <div class="txt_cen"><button class="confirm_btn">confirm</button></div>
-        </div>
+            </select> 
+            
+        </div>-->
         <br><br>
     </body>
 </html>
